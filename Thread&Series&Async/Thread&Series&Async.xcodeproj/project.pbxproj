@@ -15,6 +15,7 @@
 		E016F57F243C732900F47216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E016F57D243C732900F47216 /* LaunchScreen.storyboard */; };
 		E016F58A243C732900F47216 /* Thread_Series_AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016F589243C732900F47216 /* Thread_Series_AsyncTests.swift */; };
 		E016F595243C732900F47216 /* Thread_Series_AsyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016F594243C732900F47216 /* Thread_Series_AsyncUITests.swift */; };
+		E016F5A5243C737F00F47216 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E016F5A4243C737F00F47216 /* OCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		E016F590243C732900F47216 /* Thread&Series&AsyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thread&Series&AsyncUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E016F594243C732900F47216 /* Thread_Series_AsyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread_Series_AsyncUITests.swift; sourceTree = "<group>"; };
 		E016F596243C732900F47216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E016F5A2243C737F00F47216 /* Thread&Series&Async-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thread&Series&Async-Bridging-Header.h"; sourceTree = "<group>"; };
+		E016F5A3243C737F00F47216 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
+		E016F5A4243C737F00F47216 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,15 @@
 			isa = PBXGroup;
 			children = (
 				E016F572243C732800F47216 /* AppDelegate.swift */,
+				E016F5A3243C737F00F47216 /* OCViewController.h */,
+				E016F5A4243C737F00F47216 /* OCViewController.m */,
 				E016F574243C732800F47216 /* SceneDelegate.swift */,
 				E016F576243C732800F47216 /* ViewController.swift */,
 				E016F578243C732800F47216 /* Main.storyboard */,
 				E016F57B243C732900F47216 /* Assets.xcassets */,
 				E016F57D243C732900F47216 /* LaunchScreen.storyboard */,
 				E016F580243C732900F47216 /* Info.plist */,
+				E016F5A2243C737F00F47216 /* Thread&Series&Async-Bridging-Header.h */,
 			);
 			path = "Thread&Series&Async";
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				TargetAttributes = {
 					E016F56E243C732800F47216 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					E016F584243C732900F47216 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -261,6 +269,7 @@
 			files = (
 				E016F577243C732800F47216 /* ViewController.swift in Sources */,
 				E016F573243C732800F47216 /* AppDelegate.swift in Sources */,
+				E016F5A5243C737F00F47216 /* OCViewController.m in Sources */,
 				E016F575243C732800F47216 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBLZ44P45G;
 				INFOPLIST_FILE = "Thread&Series&Async/Info.plist";
@@ -443,6 +453,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Fjzlsc1200-China.com.Thread-Series-Async";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thread&Series&Async/Thread&Series&Async-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBLZ44P45G;
 				INFOPLIST_FILE = "Thread&Series&Async/Info.plist";
@@ -461,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Fjzlsc1200-China.com.Thread-Series-Async";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thread&Series&Async/Thread&Series&Async-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+                
+        let vc = OCViewController()
+        //        vc.testInMainThread()
+        //        vc.testInNotMainThread()
+        //        vc.testAsync()
+        vc.testSync()
     }
 
 
